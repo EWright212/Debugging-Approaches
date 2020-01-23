@@ -1,8 +1,9 @@
 def factorial(n)
   product = 1
   while n > 0
+    ptemp = n * product
     n -= 1
-    product *= n
+    product = ptemp
   end
   product
 end
